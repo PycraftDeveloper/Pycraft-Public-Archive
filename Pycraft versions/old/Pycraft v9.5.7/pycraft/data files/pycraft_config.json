@@ -1,0 +1,102 @@
+{
+ "theme": false,
+ "settings_preset": "high",
+ "adaptive_fps": 60,
+ "fps": 60,
+ "average_fps": 60,
+ "iteration": 1,
+ "FOV": 75,
+ "camera_angle_speed": 3,
+ "aa": true,
+ "render_fog": true,
+ "fancy_graphics": true,
+ "fancy_particles": true,
+ "sound": true,
+ "sound_volume": 75,
+ "music": false,
+ "music_volume": 50,
+ "x": 0,
+ "y": 0,
+ "z": 0,
+ "last_run": "29/09/2021",
+ "run_full_startup": true,
+ "crash": false,
+ "saved_window_width": 1280,
+ "saved_window_height": 720,
+ "fullscreen": true,
+ "connection_permission": null,
+ "updated": true,
+ "load_time": [
+  0,
+  1
+ ],
+ "show_message": false,
+ "show_strobe_effects": null,
+ "extended_developer_options": false,
+ "draw_devmode_graph": false,
+ "detailed_error_messages": false,
+ "logging_dictionary": {
+  "information": false,
+  "warnings": false,
+  "errors": false
+ },
+ "save_on_exit": true,
+ "resolution_preset": "default",
+ "vsync": true,
+ "aa_quality": "2x",
+ "detailed_captions": false,
+ "output_log": false,
+ "increased_speed": false,
+ "skip_time": false,
+ "remove_file_permission": null,
+ "input_configuration": {
+  "keyboard": {
+   "Jump": "Space",
+   "Back": "Esc",
+   "Toggle full-screen": "F11",
+   "List variables": "Q",
+   "Walk forwards": "W",
+   "Walk backwards": "S",
+   "Walk left": "A",
+   "Walk right": "D",
+   "Open inventory": "E",
+   "Open map": "R",
+   "Unlock mouse": "L",
+   "Skip time": "K",
+   "Confirm": "Enter",
+   "Increase speed": "I"
+  },
+  "controller": {
+   "Confirm": 1,
+   "Back": 3,
+   "Open inventory": 7,
+   "Open map": 6,
+   "Jump": 3
+  },
+  "mouse": {
+   "Primary": 1,
+   "Wheel": 2,
+   "Secondary": 3
+  }
+ },
+ "resolution": "(1280, 720)",
+ "dont_use_set_resolution": false,
+ "seasonal_events": false,
+ "compile_math": true,
+ "custom_theme": null,
+ "language": "en",
+ "use_transparency_effects": true,
+ "auto_save_frequency": 120,
+ "position": [
+  0,
+  0,
+  0
+ ],
+ "rotation": [
+  0,
+  0
+ ],
+ "game_time": 0,
+ "weather": "sunny",
+ "day": 1
+}

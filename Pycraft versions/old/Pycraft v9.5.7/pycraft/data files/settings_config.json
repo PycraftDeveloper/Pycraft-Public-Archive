@@ -1,0 +1,456 @@
+{
+    "General": [
+        [
+            "Theme",
+            "This setting allows you to customise the look of Pycraft, allowing you to choose between two saved themes, light and dark mode, but also gives you the option to customise how you want Pycraft to look.",
+            {"button": [
+                    "light",
+                    "dark",
+                    "custom"
+                ]
+            },
+            "theme"
+        ],
+        [
+            "Mode",
+            "This setting allows you to quickly adjust between different setting pre-sets based on the performance of your device. The adaptive option allows the game to automatically adjust your settings for the best performance to quality ratio.",
+            {"button": [
+                    "low",
+                    "medium",
+                    "high",
+                    "adaptive"
+                ]
+            },
+            "settings_preset"
+        ],
+        [
+            "Translate: {}.",
+            "This setting allows you to translate Pycraft into different languages.",
+            {"dropdown": "<translate_languages_list>"},
+            "language"
+        ],
+        [
+            "Seasonal events: {}.",
+            "This setting allows you to enable or disable additional Pycraft customisability for real-world events. These real world events are triggered by a date, for example Halloween on the 31st of October. There will be an additional option to toggle on and off different events for greater customisability at a later date.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "seasonal_events"
+        ],
+        [
+            "Compile maths: {}.",
+            "This setting allows you to enable/disable the compilation of maths based functions in game. Enabling this feature will significantly boost in game performance, but at the cost of longer load times. Disabling this feature will boost load times, but at the cost of poorer in game performance.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "compile_math"
+        ],
+        [
+            "Auto-save frequency: {} seconds.",
+            "This setting allows you to adjust how regularly the game engine will create autosaves, this is measured in seconds, and the default frequency is once every 120 seconds (two minutes), the minimum auto-save frequency is 30 seconds, and the maximum is 600 seconds (10 minutes).",
+            {"slider": [
+                30,
+                600]
+            },
+            "auto_save_frequency"
+        ],
+        [
+            "Developer options: {}.",
+            "This setting allows for additional settings and customization focused for developers, some of these settings are designed to help with development and testing. Use these settings at your own risk",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "extended_developer_options"
+        ]
+    ],
+
+    "Video": [
+        [
+            "Vsync {}.",
+            "This allows you to fix the maximum frame rate to the refresh rate of your display, this can reduce visual tearing.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "vsync"
+        ],
+        [
+            "FPS limit: {}. Current: {}. Average: {}.",
+            "This setting will limit the FPS of Pycraft, unfortunately this does not guarantee that frame rate. This setting cannot be adjusted when vsync is enabled.",
+            {"slider": [
+                    15,
+                    500
+                ]
+            },
+            "fps",
+            "current_fps",
+            "average_fps"
+        ],
+        [
+            "FOV: {}.",
+            "This setting will set the default FOV for Pycraft.",
+            {"slider": [
+                    30,
+                    120
+                ]
+            },
+            "FOV"
+        ],
+        [
+            "Camera sensitivity: {}.",
+            "This setting controls the maximum speed the camera will pan in game. The lower you set this value, the slower you will be able to pan the camera.",
+            {"slider": [
+                    1,
+                    6
+                ]
+            },
+            "camera_angle_speed"
+        ],
+        [
+            "Anti-aliasing: {}.",
+            "This setting allows you to toggle on and off anti-aliasing in Pycraft, turning anti-aliasing off may improve performance, especially on lower powered devices.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "aa"
+        ],
+        [
+            "Anti-aliasing sample quality: {}.",
+            "This setting allows you to adjust the quality of anti-aliasing in the game engine. Increasing this will increase the visual quality of the game engine, but will reduce performance.",
+            {"button": [
+                    "2x",
+                    "4x",
+                    "8x",
+                    "16x"
+                ]
+            },
+            "aa_quality"
+        ],
+        [
+            "Automatically adjust rendering resolution: {}.",
+            "This toggle allows you to switch between setting the rendering resolution in game to the size of your display (when enabled) or allows you to specify a resolution to render at below (when disabled).",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "dont_use_set_resolution"
+        ],
+        [
+            "Resolution: {}.",
+            "This setting allows you to adjust the rendering resolution of Pycraft when in the game engine and in fullscreen. Lowering the rendering resolution may improve Pycraft's performance with the compromise of worse visuals.",
+            {"dropdown": "<rendering_resolutions>"},
+            "resolution"
+        ],
+        [
+            "Render fog: {}.",
+            "This setting allows you to toggle the rendering of fog in Pycraft. This can help reduce GPU usage when disabled, but at the sacrifice of reduced in game detail.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "render_fog"
+        ],
+        [
+            "Fancy graphics: {}.",
+            "This setting allows you to adjust some of the more performance affecting features in Pycraft. This can also help improve performance when turned off on lower powered devices, although you will loose some of the detail in game.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "fancy_graphics"
+        ],
+        [
+            "Fancy particles: {}.",
+            "This setting allows you to adjust the quality and number of particles you see in Pycraft, potentially offering a large performance improvement when disabled.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "fancy_particles"
+        ]
+    ],
+
+    "Music and sound": [
+        [
+            "Sound: {}.",
+            "Enables/Disables sound effects in game, like for example the click sound and footsteps in game",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "sound"
+        ],
+        [
+            "Sound volume: {}%.",
+            "Controls the volume of the sound effects.",
+            {"slider": [
+                    0,
+                    100
+                ]
+            },
+            "sound_volume"
+        ],
+        [
+            "Music: {}.",
+            "Enables/Disables music in game, like for example the GUI music.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "music"
+        ],
+        [
+            "Music volume: {}%.",
+            "Controls the volume of the music throughout Pycraft. This setting wont apply until the music you are currently listening to gets paused or stopped.",
+            {"slider": [
+                    0,
+                    100
+                ]
+            },
+            "music_volume"
+        ]
+    ],
+
+    "Storage and permissions": [
+        [
+            "Pycraft's file breakdown",
+            "Here you can see a breakdown of the different types of files used in Pycraft, by hovering over either the graph its self or one of the keys below you will highlight that corresponding section. This graph refreshes every time you click on the 'Storage and permissions' option.",
+            {"directory_structure": [
+                    null
+                ]
+            },
+            "directory_structure"
+        ],
+        [
+            "Clear temporary files",
+            "By clicking this button you can clear ALL temporary files that are no longer needed by Pycraft, including language data. Please note that these files may be automatically created when you use certain features and lengthen startup time after being cleared.",
+            {"button": [
+                    "clear cache"
+                ]
+            },
+            "clear_cache"
+        ],
+        [
+            "Clear language files",
+            "By clicking on this button you can clear all the saved translations that Pycraft has stored, this can save a bit of storage space, but will mean that if you are not connected to a network you will not be able to translate Pycraft, and could extend load times as Pycraft re-translates text. This button may be helpful if you are having problems with translations in Pycraft.",
+            {"button": [
+                    "clear languages cache"
+                ]
+            },
+            "clear_languages_cache"
+        ],
+        [
+            "Scan Pycraft for errors",
+            "You can use this utility to check for any missing files required by Pycraft. This is done once a day when Pycraft first starts.",
+            {"button": [
+                    "scan Pycraft"
+                ]
+            },
+            "scan_pycraft"
+        ],
+        [
+            "Reset Pycraft",
+            "By clicking this button you will reset Pycraft to default settings. This will reset everything irreversibly back to their default configuration. This may help if you encounter issues with Pycraft or just want to reset Pycraft's settings.",
+            {"button": [
+                    "reset Pycraft"
+                ]
+            },
+            "reset_pycraft"
+        ],
+        [
+            "Allow Pycraft to access the Internet: {}.",
+            "This setting allows you to toggle Pycraft's access to the Internet, this is used only for checking for updates. (We try to connect first to google's website to make sure there is a connection, then proceed to check for updates if your device is connected to a network). This setting is unrelated to permissions required by the Pycraft's installation utility.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "connection_permission"
+        ],
+        [
+            "Allow Pycraft to access send files to the recycle bin: {}.",
+            "This setting allows you to toggle Pycraft's ability to send files to the recycle bin. Turning this off will break the ability to clear Pycraft's temporary files and will change how Pycraft generates clouds, potentially leading to a performance improvement. This permission does not extend to Pycraft;s installation utility, where permissions are asked for separately.",
+            {
+                "toggle": [
+                    true,
+                    false
+                ]
+            },
+            "remove_file_permission"
+        ],
+        [
+            "Allow strobe effects and flashing lights in game: {}.",
+            "This setting allows you to toggle strobe effects and flashing lights in Pycraft. Strobe effects and bright flashes of light can cause discomfort, (for example lightning), you can choose here whether to enable or disable those strobe effects in Pycraft.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "show_strobe_effects"
+        ]
+    ],
+
+    "Accessibility": [
+        [
+            "Transparency effects: {}.",
+            "Allows the user to turn off completely the use of transparency effects by Pycraft. This will improve the contrast of text in some GUIs.",
+            {"toggle": [
+                true,
+                false
+                ]
+            },
+            "use_transparency_effects"
+        ]
+    ],
+
+    "Input control": [
+        [
+            "Switch to using a controller as an input device: {}.",
+            "Toggles the use of either keyboard and mouse or a controller to control the mouse and interact with the GUI.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "use_mouse_input"
+        ],
+        [
+            "Select input device to remap",
+            "This setting allows you to switch which input option you want to reconfigure keys for.",
+            {"button": [
+                    "keyboard",
+                    "controller"
+                ]
+            },
+            "selected_input_reconfig"
+        ],
+        [
+            "Remapping options",
+            "This setting allows you to choose which key or button controls an event in game, you cannot have a function without a key and no function can have multiple keys. To change what key is bound to a function, simply press the button on your chosen input device whilst hovering over that button to change what button that key is bound to. When you are hovering over the buttons to change input options no bound button or keyboard presses will have any effect.",
+            {"remap_function": [
+                    "input_configuration"
+                ]
+            },
+            "keybinds"
+        ]
+    ],
+
+    "Developer options": [
+        [
+            "Remove FPS limits: {}.",
+            "This setting allows you to run Pycraft without an FPS limit, this can cause your device to heat up and potentially may break some game mechanics. Use this at your own risk!",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "fps_overclock"
+        ],
+        [
+            "Draw performance graphs: {}.",
+            "This setting toggles the display of the graph in the top right of the display that shows information about your systems CPU and memory usage, as well as the FPS and average FPS in Pycraft.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "draw_devmode_graph"
+        ],
+        [
+            "Detailed error messages: {}.",
+            "This setting allows Pycraft to display more information when an error occurs in Pycraft, this makes error reporting and bug-fixes easier.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "detailed_error_messages"
+        ],
+        [
+            "Detailed captions: {}.",
+            "This setting allows you to see some performance metrics for Pycraft in your caption. This is very useful for checking for bugs.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "detailed_captions"
+        ],
+        [
+            "Logging details",
+            "This setting adjusts what, if anything, Pycraft will log. Information is non-critical and will not have an adverse affect on Pycraft's operation, they serve to help find and isolate bugs. Warnings are important, they tell you when a feature isn't working as expected, these wont stop Pycraft from running but could cause unexpected behaviour. Errors are critical, if an error occurs then Pycraft cannot continue running and this will need to be immediately addressed by the developer. The log file cannot exceed 1MB in size, which allows for roughly 15,000 entries.",
+            {"multi-button": [
+                    "information",
+                    "warnings",
+                    "errors"
+                ]
+            },
+            "logging_dictionary"
+        ],
+        [
+            "Output logging details to display",
+            "When Pycraft runs it will have a second text based display, this is often in the form of a terminal window. If this setting is enabled then anything you have configured to be logged will also display in this space",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "output_log"
+        ],
+        [
+            "Close Pycraft",
+            "Clicking the buttons below will trigger Pycraft to either restart or quit, this can be used to apply changes to settings, update the currently running code and more. This setting uses the next setting down to decide wether to save your data. Please note that when closing Pycraft after restarting the process may not clean up memory as nicely in the background and you will have to do this manually (either by pressing the 'x' on the terminal window, or through task manager or similar utility.)",
+            {"button": [
+                    "exit",
+                    "restart"
+                ]
+            },
+            "exit_mode"
+        ],
+        [
+            "Save current settings on exit: {}.",
+            "This option allows you to choose whether when Pycraft exits, either using the method above or manually, settings that you may have modified since you last saved Pycraft will be stored.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "save_on_exit"
+        ],
+        [
+            "Increase player movement speed: {}.",
+            "When this setting is enabled, by pressing the 'i' in game will allow you to move quickly",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "increased_speed"
+        ],
+        [
+            "Skip time in game: {}.",
+            "This setting will allow you to scroll wheel or use the 'k' key in game to advance time, this feature has the potential to break many in-game mechanics but is useful to speed up time related testing.",
+            {"toggle": [
+                    true,
+                    false
+                ]
+            },
+            "skip_time"
+        ]
+    ]
+}
