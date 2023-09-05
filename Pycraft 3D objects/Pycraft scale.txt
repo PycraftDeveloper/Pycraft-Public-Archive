@@ -1,0 +1,18 @@
+map length = 19.5983478 km
+map height = 19.5983478 km
+
+map = 384.0952364897648 sq km (1.5621125778163315874823813834624 points/sq meter)
+
+map max height = 981.567917695 metres
+
+map depth = -23 metres
+
+sea level = 0
+
+type: island
+
+600, 000 vertices for map
+
+max 12, 000, 000 vertices
+
+GIMP image to resolution of 1 pixel to 2sq/m
