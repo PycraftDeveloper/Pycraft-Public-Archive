@@ -1,5 +1,5 @@
-import tkinter as tk 
-import pygame 
+import tkinter as tk
+import pygame
 from numpy import *
 from math import *
 from random import *
@@ -15,7 +15,7 @@ GameSurface.pack()
 root.title('Pycraft')
 root
 
-Home_Background = tk.PhotoImage(file="C:\\Users\\pamj0\\Documents\\Thomas' computer files\\Thomas' persional files and computer programming\\PYcraft\\PYcraft_Background.gif")
+Home_Background = tk.PhotoImage(file="") # Enter file path
 GameSurface.create_image(0, 0, anchor = tk.NW, image=Home_Background)
 
 title = tk.Label(root, text='PYcraft', background='white')

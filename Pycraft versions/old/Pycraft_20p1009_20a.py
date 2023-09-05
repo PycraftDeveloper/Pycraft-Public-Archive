@@ -53,7 +53,7 @@ def Start(): # this procedure creates an intro, and checks all modules are insta
         data.seek(0) # navigates to the first character in the file (index = 0)
         data.truncate() # this secects all the data in the file...and clears it.
         data.close() # saves the file
-        data = open("D:\\PYGAME\\Data_Files\\data.txt","r+") # re opens it 
+        data = open("D:\\PYGAME\\Data_Files\\data.txt","r+") # re opens it
         data.write("True") # this tells the program when its next run that this is not the first run
         data.close() # this clears the file from the program as it is no longer needed, freeing up 4 bytes of RAM
         Display = pygame.display.set_mode((width, height)) # creates a GUI with the size of width and height
@@ -67,7 +67,7 @@ def Start(): # this procedure creates an intro, and checks all modules are insta
         NameFont = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 45) # END OF FONT LOADING
         Display.fill([0,0,0]) # sets the display colour to black
         pygame.time.wait(2000) # waits the program for 2000 milliseconds (2 seconds)
-        name = NameFont.render("Thomas Jebson",True,(255,255,255)) # loads Thomas Jebson into the RAM with the font NameFont
+        name = NameFont.render("PycraftDev",True,(255,255,255)) # loads PycraftDev into the RAM with the font NameFont
         Display.blit(name,(480,360)) # renders the name variable to the screen at the position, (480,360)
         pygame.display.flip() # updates the GUI to add the current items
         pygame.time.wait(2000)
@@ -158,9 +158,9 @@ def settings(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, FanSky, F
             elif event.type == pygame.KEYDOWN: # detects keypresses
                 if event.key == pygame.K_SPACE and devmode < 10: # if developer mode is getting enabled...
                     devmode += 1 # increases the devmode value
-                    if devmode >= 5 and devmode <= 9: # if devmode is getting enabled then 
+                    if devmode >= 5 and devmode <= 9: # if devmode is getting enabled then
                         pygame.display.set_caption(f"Pycraft: {version}: Settings | you are: {10-devmode} steps away from being a developer") # tells the user that they are enabling devmode
-                    elif devmode == 10: # if devmode is enabled then 
+                    elif devmode == 10: # if devmode is enabled then
                         pygame.display.set_caption(f"Pycraft {version}: Settings | Developer mode | V: 0,00 | FPS: {clock.get_fps()} | MemUsE: {psutil.virtual_memory().percent} | CPUUsE: {str(psutil.cpu_percent())}") # tells the user
                         FCol = (220,220,255)
                     else:# if the developer mode is not enabled then it is set to default
@@ -222,7 +222,7 @@ def settings(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, FanSky, F
         Display.blit(LOWtFont, (48,50))
         Display.blit(MEDIUMtFont, (90,50))
         Display.blit(HIGHtFont, (165,50))
-        Display.blit(ADAPTIVEtFont, (215,50)) # then continues with the settings 
+        Display.blit(ADAPTIVEtFont, (215,50)) # then continues with the settings
         Display.blit(AAtFont, (0,300))
         Display.blit(RenderFogtFont, (0,350))
         Display.blit(FancySkytFont, (0,400))
@@ -317,7 +317,7 @@ def settings(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, FanSky, F
                     aa = False # switches off
                     mousebuttondown = False # stops the on/off button breaking
                 elif aa == False: # if off switch on
-                    aa = True # switches on 
+                    aa = True # switches on
                     mousebuttondown = False # stops the on/off button from breaking
             if My > 380 and My < 390:
                 if RenderFOG == True:
@@ -390,7 +390,7 @@ def settings(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, FanSky, F
                 mousebuttondown = False
         else:
             HIGHFont.set_underline(False)
-        if My >= 40 and My <= 70 and Mx >= 215 and Mx <= 300: 
+        if My >= 40 and My <= 70 and Mx >= 215 and Mx <= 300:
             ADAPTIVEFont.set_underline(True)
             if mousebuttondown == True:
                 mousebuttondown = False
@@ -546,9 +546,9 @@ def Credits(devmode, aa): # loads the credits menu
             elif event.type == pygame.KEYDOWN: # detects keypresses
                 if event.key == pygame.K_SPACE and devmode < 10: # if developer mode is getting enabled...
                     devmode += 1 # increases the devmode value
-                    if devmode >= 5 and devmode <= 9: # if devmode is getting enabled then 
+                    if devmode >= 5 and devmode <= 9: # if devmode is getting enabled then
                         pygame.display.set_caption(f"Pycraft: {version}: Credits and Change-Log | you are: {10-devmode} steps away from being a developer") # tells the user that they are enabling devmode
-                    elif devmode == 10: # if devmode is enabled then 
+                    elif devmode == 10: # if devmode is enabled then
                         pygame.display.set_caption(f"Pycraft: {version}: Credits and Change-Log | Developer mode | V: 0,00 | FPS: {clock.get_fps()} | MemUsE: {psutil.virtual_memory().percent} | CPUUsE: {str(psutil.cpu_percent())}") # tells the user
                         FCol = (220,220,255)
                     else:# if the developer mode is not enabled then it is set to default
@@ -575,8 +575,8 @@ def Credits(devmode, aa): # loads the credits menu
                     FCol = (255,255,255) # resets the font colour
                     pygame.display.set_caption(f"Pycraft: {version}: Credits and Change-Log") # and the caption
         TitleFont = MainTitleFont.render("Pycraft", aa, FCol) # main title with colour defined with developer mode
-        Credits1 = VersionFont.render("Head of Development: Thomas Jebson", aa, (255,255,255)) # start of long font for credits and change-log
-        Credits2 = VersionFont.render("Music By: Thomas Jebson", aa, (255,255,255))
+        Credits1 = VersionFont.render("Head of Development: PycraftDev", aa, (255,255,255)) # start of long font for credits and change-log
+        Credits2 = VersionFont.render("Music By: PycraftDev", aa, (255,255,255))
         Credits3 = VersionFont.render("Other Programmers:", aa, (255,255,255))
         Credits4 = VersionFont.render(" - Pygame: illume, pygameci, takowl", aa, (255,255,255))
         Credits5 = VersionFont.render(" - PyOpenGL: mcfletch", aa, (255,255,255))
@@ -644,7 +644,7 @@ def Credits(devmode, aa): # loads the credits menu
         Display.blit(ChangeLog7, (0,560))
         Display.blit(ChangeLog8, (0,575))
         Display.blit(ChangeLog9, (0,590))
-        Display.blit(ChangeLog10, (0,605)) # END OF ADDING DATA TO THE DISPLAY  
+        Display.blit(ChangeLog10, (0,605)) # END OF ADDING DATA TO THE DISPLAY
         if devmode == 10 or devmode-10 == 0:
             pygame.display.set_caption(f"Pycraft: {version}: Credits and Change-Log | Developer mode | V: 0,0,0 | FPS: {clock.get_fps()} | MemUsE: {psutil.virtual_memory().percent} | CPUUsE: {str(psutil.cpu_percent())}")
         else:
@@ -710,7 +710,7 @@ def Home_Screen(devmode, rendis, FPS, FOV, cameraANGspeed, aa, RenderFOG, FanSky
     mousebuttondown = False # used to tell the if statements later on weather the mouse button is down or not
     wallpaper = pygame.image.load("D:\\PYGAME\\Resources\\General_Resources\\Pycraft_Background.jpg") # loads the background image (feature coming here)
     MainTitleFont = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 60) # loads the title / heading font
-    SideFont = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 24) # loads the "By Thomas Jebson" font
+    SideFont = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 24) # loads the "By PycraftDev" font
     VersionFont = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 15) # loads the font that displays the version
     ButtonFont1 = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 30) # play
     ButtonFont2 = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 30) # settings
@@ -736,7 +736,7 @@ def Home_Screen(devmode, rendis, FPS, FOV, cameraANGspeed, aa, RenderFOG, FanSky
         run += 1 # increases the run value by 1
         rand = 0 # rand is a temporary variable use to store the number of errors in a loop
         PycraftTitle = MainTitleFont.render("Pycraft", aa, (FCol)) # loads the title font text
-        Name = SideFont.render("By Thomas Jebson", aa, (FCol)) # loads the creator name text
+        Name = SideFont.render("By PycraftDev", aa, (FCol)) # loads the creator name text
         Version = VersionFont.render(f"Version: {version}", aa, (FCol)) # loads the version text
         Play = ButtonFont1.render("Play", aa, (255,255,255)) # loads the play text
         Settings = ButtonFont2.render("Settings", aa, (255,255,255)) # loads the settings text
@@ -750,9 +750,9 @@ def Home_Screen(devmode, rendis, FPS, FOV, cameraANGspeed, aa, RenderFOG, FanSky
             elif event.type == pygame.KEYDOWN: # detects keypresses
                 if event.key == pygame.K_SPACE and devmode < 10: # if developer mode is getting enabled...
                     devmode += 1 # increases the devmode value
-                    if devmode >= 5 and devmode <= 9: # if devmode is getting enabled then 
+                    if devmode >= 5 and devmode <= 9: # if devmode is getting enabled then
                         pygame.display.set_caption(f"Pycraft: {version}: Home | you are: {10-devmode} steps away from being a developer") # tells the user that they are enabling devmode
-                    elif devmode == 10: # if devmode is enabled then 
+                    elif devmode == 10: # if devmode is enabled then
                         pygame.display.set_caption(f"Pycraft: {version}: Home | Developer mode | V: 0,0,0 | FPS: {clock.get_fps()} | MemUsE: {psutil.virtual_memory().percent} | CPUUsE: {str(psutil.cpu_percent())}") # tells the user
                         FCol = (220,220,255)
                     else:# if the developer mode is not enabled then it is set to default
@@ -781,8 +781,8 @@ def Home_Screen(devmode, rendis, FPS, FOV, cameraANGspeed, aa, RenderFOG, FanSky
             if event.type == pygame.MOUSEBUTTONDOWN: # if the mouse button down
                 mousebuttondown = True # mouse button down is set to True (yes)
             if event.type == pygame.MOUSEBUTTONUP: # if the mouse button is up
-                mousebuttondown = False # this variable is set to no (False)    
-        ButtonFont1.set_underline(hover1) # applies an underline value to each button 
+                mousebuttondown = False # this variable is set to no (False)
+        ButtonFont1.set_underline(hover1) # applies an underline value to each button
         ButtonFont2.set_underline(hover2) # when hovering over it
         ButtonFont3.set_underline(hover3)
         ButtonFont4.set_underline(hover4)
@@ -968,7 +968,7 @@ def CharacterModel(PlayerModel, PlayerModel_scale, PlayerModel_trans, PlayerMode
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR) # makes sure the texture moves and rotates correctly
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 512, 512, 0, GL_RGB, GL_UNSIGNED_BYTE, MapTexture) # blits the texture to the cube (renders)'''
-    
+
 def LoadSkyBox(aa):
     if aa == True:
         im1 = Image.open("D:\\PYGAME\\Resources\\G3_Resources\\skybox\\front.jpg").rotate(180).transpose(Image.FLIP_LEFT_RIGHT).resize((512,512), Image.ANTIALIAS) # loads the image specified, rotates it, then flips it from left to right then resizes it to fit the cube (google a skybox if you don't understand)
@@ -1058,7 +1058,7 @@ def DrawMapTexture():
     glBindTexture(GL_TEXTURE_2D, 7) # binds the texture to the ground
     glBegin(GL_QUADS) # opens the oGL file
     glTexCoord2f(0, 0) # sets the image coords to 0,0
-    glVertex3f(-10.0, 0.0, -10.0) # loads the image at the points 
+    glVertex3f(-10.0, 0.0, -10.0) # loads the image at the points
     glTexCoord2f(1, 0) # takes a 3D location and converts the coords into a 2D location
     glVertex3f(10.0, 0.0, -10.0)
     glTexCoord2f(1, 1)
@@ -1069,14 +1069,14 @@ def DrawMapTexture():
     glBindTexture(GL_TEXTURE_2D, 0)
 
 def DrawSkyBox():
-    glEnable(GL_TEXTURE_2D) # allows 2D images 
+    glEnable(GL_TEXTURE_2D) # allows 2D images
     glDisable(GL_DEPTH_TEST) # does not include the skybox into the translation vector
     glColor3f(1,1,1) # sets the colour of all the surface to white (clears the cube of all texture)
     # c1 Front
     glBindTexture(GL_TEXTURE_2D, 1) # binds the texture to the cube
     glBegin(GL_QUADS) # opens the oGL file
     glTexCoord2f(0, 0) # sets the image coords to 0,0
-    glVertex3f(-10.0, -10.0, -10.0) # loads the image at the points 
+    glVertex3f(-10.0, -10.0, -10.0) # loads the image at the points
     glTexCoord2f(1, 0) # takes a 3D location and converts the coords into a 2D location
     glVertex3f(10.0, -10.0, -10.0)
     glTexCoord2f(1, 1)
@@ -1156,7 +1156,7 @@ def DrawSkyBox():
     glEnd()
     glBindTexture(GL_TEXTURE_2D, 0)
     glEnable(GL_DEPTH_TEST)
-    
+
 def main(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, Display, LoadingGameImage): # what requirements are needed to run this function, (are specified here)
     LoadingPercent = 0
     line = []
@@ -1338,7 +1338,7 @@ def main(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, Display, Load
             pygame.display.set_caption(f"Pycraft: {version}: Playing | Developer mode | V: {Total_move_x, Total_move_y, Total_move_z} | FPS: {round(example_FPS,1)} | MemUsE: {psutil.virtual_memory().percent} | CPUUsE: {str(psutil.cpu_percent())}")
         else:
             pygame.display.set_caption(f"Pycraft: {version}: Playing")
-        
+
         mX, mY = pygame.mouse.get_pos()
         x = glGetDoublev(GL_MODELVIEW_MATRIX)
         camera_x = x[3][0]
@@ -1366,7 +1366,7 @@ def main(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, Display, Load
                     WKeyPressed = True
                 if event.key == pygame.K_s:
                     SKeyPressed = True
-                if event.key == pygame.K_SPACE and Jump == False: 
+                if event.key == pygame.K_SPACE and Jump == False:
                     Jump = True
                 if event.key == pygame.K_ESCAPE:
                     # locks and unlocks the mouse to the canvas
@@ -1422,13 +1422,13 @@ def main(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, Display, Load
                 Total_move_z += 6
             time -= 1
         else:
-            stop = False 
+            stop = False
         if AKeyPressed == True:
             Total_move_x += -3.5
         if SKeyPressed == True:
             Total_move_z += -3.5
         if DKeyPressed == True:
-            Total_move_x += 3.5    
+            Total_move_x += 3.5
 
         # jump animation
         if Jump == True:
@@ -1556,10 +1556,10 @@ def main(rendis, FPS, FOV, cameraANGspeed, devmode, aa, RenderFOG, Display, Load
         glShadeModel(GL_SMOOTH)
 
         pygame.display.flip()
-        
+
         '''myScreenshot = pyautogui.screenshot()
         myScreenshot.save(r"E:\img.png")'''
-        
+
         clock.tick(FPS)
 
 Home_Screen(devmode, rendis, FPS, FOV, cameraANGspeed, aa, RenderFOG, FanSky, FanPart, sound, soundVOL, music, musicVOL)
