@@ -65,7 +65,7 @@ def Start(): # this procedure creates an intro, and checks all modules are insta
         NameFont = pygame.font.Font("D:\\PYGAME\\Fonts\\Book Antiqua.ttf", 45) # END OF FONT LOADING
         Display.fill([0,0,0]) # sets the display colour to black
         pygame.time.wait(2000) # waits the program for 2000 milliseconds (2 seconds)
-        name = NameFont.render("Thomas Jebson",True,(255,255,255)) # loads Thomas Jebson into the RAM with the font NameFont
+        name = NameFont.render("PycraftDev",True,(255,255,255)) # loads PycraftDev into the RAM with the font NameFont
         Display.blit(name,(480,360)) # renders the name variable to the screen at the position, (480,360)
         pygame.display.flip() # updates the GUI to add the current items
         pygame.time.wait(2000)
